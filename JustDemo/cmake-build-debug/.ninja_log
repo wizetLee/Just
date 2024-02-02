@@ -1,0 +1,8 @@
+# ninja log v5
+5	173	1706870943664485124	CMakeFiles/JustDemo.dir/main.cpp.o	22e39ad8dff096e4
+1	44	1706871177926253499	build.ninja	f66988285484f7bb
+173	219	1706870943711345249	JustDemo	5a3ddb8a0993725b
+5	210	1706853973799751083	CMakeFiles/JustDemo.dir/src/zmq/zmq_util.cpp.o	b391487645372a69
+11	45	1706871180371304291	CMakeFiles/JustDemo.dir/main.cpp.o	917131adeb20bcc9
+11	270	1706871180596407541	CMakeFiles/JustDemo.dir/src/zmq/zmq_util.cpp.o	9f6bda7e9d06f5d2
+271	302	1706871180628923458	JustDemo	5a3ddb8a0993725b

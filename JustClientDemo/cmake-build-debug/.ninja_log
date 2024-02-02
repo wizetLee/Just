@@ -1,0 +1,7 @@
+# ninja log v5
+4	307	1706870950890344541	CMakeFiles/JustClientDemo.dir/main.cpp.o	cfb8980fc2916865
+4	213	1706854367819804374	CMakeFiles/JustClientDemo.dir/src/zmq/zmq_util.cpp.o	c2f2f5c3543f9b9a
+307	338	1706870950923066374	JustClientDemo	41a4e83c0dbd2a1c
+4	207	1706871182205733916	CMakeFiles/JustClientDemo.dir/src/zmq/zmq_util.cpp.o	ddc2e88b0014b380
+4	215	1706871182213510958	CMakeFiles/JustClientDemo.dir/main.cpp.o	b6f1f0aaebb7f366
+215	246	1706871182246247333	JustClientDemo	41a4e83c0dbd2a1c
