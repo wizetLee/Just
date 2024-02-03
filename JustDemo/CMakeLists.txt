@@ -5,5 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(JustDemo main.cpp src/zmq/zmq_util.cpp src/zmq/zmq_util.h)
 
-include_directories(/opt/homebrew/Cellar/zeromq/4.3.5_1/include)
-target_link_libraries(JustDemo PRIVATE /opt/homebrew/Cellar/zeromq/4.3.5_1/lib/libzmq.dylib)
+#set(ZEROMQ_VERSION 4.3.5_1)
+set(ZEROMQ_VERSION 4.3.4)
+include_directories(/opt/homebrew/Cellar/zeromq/${ZEROMQ_VERSION}/include)
+target_link_libraries(JustDemo PRIVATE /opt/homebrew/Cellar/zeromq/${ZEROMQ_VERSION}/lib/libzmq.dylib)

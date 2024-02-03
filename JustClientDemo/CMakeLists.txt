@@ -5,5 +5,14 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(JustClientDemo main.cpp src/zmq/zmq_util.cpp src/zmq/zmq_util.h)
 
-include_directories(/opt/homebrew/Cellar/zeromq/4.3.5_1/include)
-target_link_libraries(JustClientDemo PRIVATE /opt/homebrew/Cellar/zeromq/4.3.5_1/lib/libzmq.dylib)
+set(ZEROMQ_VERSION 4.3.4)
+set(LIBEVENT_VERSION 2.1.12)
+
+#set(ZEROMQ_VERSION 4.3.5_1)
+#set(LIBEVENT_VERSION 2.1.12)
+
+include_directories(/opt/homebrew/Cellar/zeromq/${ZEROMQ_VERSION}/include)
+target_link_libraries(JustClientDemo PRIVATE /opt/homebrew/Cellar/zeromq/${ZEROMQ_VERSION}/lib/libzmq.dylib)
+
+include_directories(/opt/homebrew/Cellar/libevent/${LIBEVENT_VERSION}/include)
+target_link_libraries(JustClientDemo PRIVATE /opt/homebrew/Cellar/libevent/${LIBEVENT_VERSION}/lib/libevent.dylib)

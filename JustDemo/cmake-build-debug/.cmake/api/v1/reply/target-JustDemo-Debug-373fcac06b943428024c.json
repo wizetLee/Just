@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "JustClientDemo"
+			"path" : "JustDemo"
 		}
 	],
 	"backtrace" : 1,
@@ -32,13 +32,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 8,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -49,7 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
+					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/opt/homebrew/Cellar/zeromq/4.3.5_1/include"
+					"path" : "/opt/homebrew/Cellar/zeromq/4.3.4/include"
 				}
 			],
 			"language" : "CXX",
@@ -78,7 +78,7 @@
 			]
 		}
 	],
-	"id" : "JustClientDemo::@6890427a1f51a3e7e1df",
+	"id" : "JustDemo::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -93,14 +93,14 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/opt/homebrew/Cellar/zeromq/4.3.5_1/lib/libzmq.dylib",
+				"fragment" : "/opt/homebrew/Cellar/zeromq/4.3.4/lib/libzmq.dylib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "JustClientDemo",
-	"nameOnDisk" : "JustClientDemo",
+	"name" : "JustDemo",
+	"nameOnDisk" : "JustDemo",
 	"paths" : 
 	{
 		"build" : ".",

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "JustDemo"
+			"path" : "JustClientDemo"
 		}
 	],
 	"backtrace" : 1,
@@ -32,13 +32,25 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 8,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -49,7 +61,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
+					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -58,8 +70,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/opt/homebrew/Cellar/zeromq/4.3.5_1/include"
+					"backtrace" : 4,
+					"path" : "/opt/homebrew/Cellar/zeromq/4.3.4/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/opt/homebrew/Cellar/libevent/2.1.12/include"
 				}
 			],
 			"language" : "CXX",
@@ -78,7 +94,7 @@
 			]
 		}
 	],
-	"id" : "JustDemo::@6890427a1f51a3e7e1df",
+	"id" : "JustClientDemo::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -93,14 +109,19 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/opt/homebrew/Cellar/zeromq/4.3.5_1/lib/libzmq.dylib",
+				"fragment" : "/opt/homebrew/Cellar/zeromq/4.3.4/lib/libzmq.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/opt/homebrew/Cellar/libevent/2.1.12/lib/libevent.dylib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "JustDemo",
-	"nameOnDisk" : "JustDemo",
+	"name" : "JustClientDemo",
+	"nameOnDisk" : "JustClientDemo",
 	"paths" : 
 	{
 		"build" : ".",
