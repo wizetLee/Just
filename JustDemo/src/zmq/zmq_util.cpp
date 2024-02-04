@@ -85,16 +85,16 @@ void zmq_util::pub_sub_server() {
 
   int i = 0;
   while (true) {
-    //    {
-    //      int rc;
-    //      char *string = "Topic";
-    //      size_t size = strlen(string);
-    //      zmq_msg_t msg;
-    //      zmq_msg_init_size(&msg, size);
-    //      memcpy(zmq_msg_data(&msg), string, size);
-    //      rc = zmq_msg_send(&msg, socket, ZMQ_SNDMORE);// ZMQ_SNDMORE
-    //      zmq_msg_close(&msg);
-    //    }
+        {
+          int rc;
+          char *string = "Topic";
+          size_t size = strlen(string);
+          zmq_msg_t msg;
+          zmq_msg_init_size(&msg, size);
+          memcpy(zmq_msg_data(&msg), string, size);
+          rc = zmq_msg_send(&msg, socket, ZMQ_SNDMORE);// ZMQ_SNDMORE
+          zmq_msg_close(&msg);
+        }
     // ZMQ_SNDMORE 是 ZeroMQ（ZMQ）中用于发送多部分消息（multipart messages）的选项标识。该标识告诉 ZeroMQ 库在发送消息时，当前消息后面还有更多的消息部分。
     // 在 ZeroMQ 中，消息可以分为多个部分，每个部分都可以单独发送或接收。通过在发送消息时使用 ZMQ_SNDMORE 标识，
     // 你可以告诉 ZeroMQ 库，当前发送的消息是多部分消息的一部分，后面还会有其他部分。这使得可以构建具有多部分内容的复杂消息。

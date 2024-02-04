@@ -9,9 +9,8 @@
 int main() {
 
   //  zmq_util::req_rep_client();
-
   //  zmq_util::pub_sub_client();
+  //  zmq_util::push_pull_client();
 
-  zmq_util::push_pull_client();
   return 0;
 }

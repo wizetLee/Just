@@ -128,7 +128,8 @@ void zmq_util::pub_sub_client() {
   //  const char *topic = "example_topic";
   //  zmq_setsockopt(socket, ZMQ_SUBSCRIBE, topic, strlen(topic));
 
-  zmq_setsockopt(socket, ZMQ_SUBSCRIBE, "", 0);
+  char *filter = "Topic"; // 设置我们需要的消息类型
+  zmq_setsockopt(socket, ZMQ_SUBSCRIBE, filter, strlen(filter));
 
   while (true) {
     char *reply = zmq_util::s_recv(socket);
